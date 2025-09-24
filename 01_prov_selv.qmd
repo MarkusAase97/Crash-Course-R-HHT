@@ -1,0 +1,55 @@
+---
+title: "Prøv selv"
+---
+
+# Prøv Selv i R ✍️
+
+Denne siden er laget for at du som student skal kunne teste koden selv direkte i nettleseren (via **Binder** eller lignende løsninger). Her finner du små oppgaver, kodebiter og åpne felt hvor du kan eksperimentere.
+
+---
+
+## Oppgave 1: Variabler
+
+Opprett en variabel `alder` med verdien `25`. Print ut verdien.
+
+```{r}
+# Skriv koden din her
+```
+
+---
+
+## Oppgave 2: Navngivning
+
+Lag en variabel som heter `antall_boker` og gi den et heltall. Lag en ny variabel `pris_per_bok` og multipliser dem for å finne totalprisen.
+
+```{r}
+# Skriv koden din her
+```
+
+---
+
+## Oppgave 3: Datatyper
+
+Definer tre variabler:
+- En numerisk variabel
+- En tekstvariabel
+- En logisk variabel
+
+Bruk `typeof()` for å sjekke datatypene.
+
+```{r}
+# Skriv koden din her
+```
+
+---
+
+## Oppgave 4: Beregning
+
+Du setter inn `10 000 kr` i banken med 5% rente i 3 år. Bruk formelen for sluttverdi:
+
+\[ K_t = K_0 (1 + r)^t \]
+
+```{r}
+# Skriv koden din her
+```
+

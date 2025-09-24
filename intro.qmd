@@ -1,0 +1,41 @@
+---
+title: "Introduksjon: R, RStudio og Ditt Første Program"
+---
+
+# Introduksjon til R
+
+Dette kurset handler om å gi deg grunnleggende programmeringsferdigheter i **R**, spesielt forankret mot økonomiske problemstillinger. R er et programmeringsspråk og miljø for statistisk databehandling og grafikk, og er *de facto* standarden innenfor mange felt innen økonomi og statistikk.
+
+## Oppsett av Utviklingsmiljøet (RStudio)
+
+Vi bruker **RStudio** som vårt Integrated Development Environment (IDE). RStudio gjør det enklere å skrive kode, se variabler og plotte resultater.
+
+Dersom du har R og RStudio installert på maskinen din, kan du nå begynne å skrive kode i **Konsollen** (nederst til venstre) eller i en **R Script-fil** (oppe til venstre).
+
+## Installere R/RStudio
+Hvis du ikke har R og RStudio installert, kan du følge disse stegene:
+1.  Gå til [CRAN R Project](https://cran.r-project.org/) og last ned/installér R for ditt operativsystem (Windows, Mac, Linux).
+2.  Gå til [RStudio nedlastingssiden](https://posit.co/download/rstudio-desktop/) og last ned/installér RStudio Desktop (gratisversjonen er tilstrekkelig).
+3.  Åpne RStudio og sørg for at det peker til riktig R-versjon (under `Tools` > `Global Options` > `R version`).
+4.  Du kan også bruke [RStudio Cloud](https://rstudio.cloud/) for å kjøre R i nettleseren uten lokal installasjon.
+
+## Første Steg: Pakkehåndtering
+
+I R er det vanlig å bruke funksjonalitet som er organisert i **pakker** (libraries). Før du kan bruke en pakke, må du:
+
+1.  **Installere** den (gjort én gang): `install.packages("pakkenavn")`
+2.  **Laste inn** den (gjort hver økt): `library(pakkenavn)`
+
+Vi skal bruke den populære pakken **`tidyverse`**, som er en samling verktøy for datahåndtering.
+
+### Kodeblokk: Installer og last inn Tidyverse
+
+```{r}
+# 1. Installer (fjern #-tegnet og kjør linjen én gang)  
+# install.packages("tidyverse")`
+
+# 2. Last inn pakken for denne økten
+# library(tidyverse)
+```
+
+Det var kort og godt, hvordan dere kan laste ned R, RStudio og installere nødvendige pakker. I de neste kapitlene vil vi gå mer i dybden på R-språket og dets anvendelser innen økonomi.
