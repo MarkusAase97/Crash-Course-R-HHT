@@ -1,0 +1,310 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R-Kræsj Kurs for Økonomistudenter",
+    "section": "",
+    "text": "1 Velkommen! 🚀\nDette kurset er designet som et intensivt, praktisk introduksjonskurs i programmeringsspråket R, spesielt tilpasset studenter ved Handelshøgskolen UiT.\nMålet er å gi deg grunnleggende ferdigheter i programmering og dataanalyse. Du vil lære å bruke R til å:",
+    "crumbs": [
+      "Velkommen",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Velkommen til R-Kræsj Kurs</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#om-kurset-og-interaktivitet",
+    "href": "index.html#om-kurset-og-interaktivitet",
+    "title": "R-Kræsj Kurs for Økonomistudenter",
+    "section": "1.1 Om Kurset og Interaktivitet",
+    "text": "1.1 Om Kurset og Interaktivitet\nDette er en interaktiv bok. Det betyr at du kan:\n\nLese: Gå gjennom teorien og kodeeksemplene.\nKjøre kode: Ved hjelp av Binder (rakett-ikonet øverst) kan du starte et eksternt miljø hvor du kan kjøre R-kode direkte i nettleseren, uten lokal installasjon.\nØve: Hvert kapittel inneholder «Prøv selv»-oppgaver for å styrke læringen.\n\nVi fokuserer på Tidyverse-økosystemet (spesielt dplyr for datahåndtering og ggplot2 for visualisering), som er standarden for dataanalyse i moderne R.",
+    "crumbs": [
+      "Velkommen",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Velkommen til R-Kræsj Kurs</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#kursstruktur",
+    "href": "index.html#kursstruktur",
+    "title": "R-Kræsj Kurs for Økonomistudenter",
+    "section": "1.2 Kursstruktur",
+    "text": "1.2 Kursstruktur\nKurset er delt inn i moduler som bygger på hverandre. Du vil kjenne igjen temaene fra Python-kurset, men nå anvendt i R-språket.\n\n1.2.1 Moduler:\n\nIntroduksjon (Dette kapittelet)\nGrunnleggende R: Variabler, datatyper og funksjoner.\nData og Strukturer: Hvordan R håndterer data (Vektorer, Lister, Tibbles).\nDatabehandling med Tidyverse: Laste inn, filtrere og aggregere data (erstatter Pandas).\nLogikk og Kontrollflyt: if/else, for- og while-løkker.\nVisualisering med ggplot2: Lage profesjonelle grafer (erstatter Matplotlib/Seaborn).\nAnvendt Økonomi: Simuleringer og symbolsk matematikk (f.eks. derivasjon).\n\n\nKlikk på Introduksjon eller Grunnleggende R i innholdsfortegnelsen til venstre for å starte. Lykke til!",
+    "crumbs": [
+      "Velkommen",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Velkommen til R-Kræsj Kurs</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Introduksjon: R, RStudio og Ditt Første Program",
+    "section": "",
+    "text": "3 Introduksjon til R\nDette kurset handler om å gi deg grunnleggende programmeringsferdigheter i R, spesielt forankret mot økonomiske problemstillinger. R er et programmeringsspråk og miljø for statistisk databehandling og grafikk, og er de facto standarden innenfor mange felt innen økonomi og statistikk.",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduksjon: R, RStudio og Ditt Første Program</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#oppsett-av-utviklingsmiljøet-rstudio",
+    "href": "intro.html#oppsett-av-utviklingsmiljøet-rstudio",
+    "title": "2  Introduksjon: R, RStudio og Ditt Første Program",
+    "section": "3.1 Oppsett av Utviklingsmiljøet (RStudio)",
+    "text": "3.1 Oppsett av Utviklingsmiljøet (RStudio)\nVi bruker RStudio som vårt Integrated Development Environment (IDE). RStudio gjør det enklere å skrive kode, se variabler og plotte resultater.\nDersom du har R og RStudio installert på maskinen din, kan du nå begynne å skrive kode i Konsollen (nederst til venstre) eller i en R Script-fil (oppe til venstre).",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduksjon: R, RStudio og Ditt Første Program</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#installere-rrstudio",
+    "href": "intro.html#installere-rrstudio",
+    "title": "2  Introduksjon: R, RStudio og Ditt Første Program",
+    "section": "3.2 Installere R/RStudio",
+    "text": "3.2 Installere R/RStudio\nHvis du ikke har R og RStudio installert, kan du følge disse stegene: 1. Gå til CRAN R Project og last ned/installér R for ditt operativsystem (Windows, Mac, Linux). 2. Gå til RStudio nedlastingssiden og last ned/installér RStudio Desktop (gratisversjonen er tilstrekkelig). 3. Åpne RStudio og sørg for at det peker til riktig R-versjon (under Tools &gt; Global Options &gt; R version). 4. Du kan også bruke RStudio Cloud for å kjøre R i nettleseren uten lokal installasjon.",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduksjon: R, RStudio og Ditt Første Program</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#første-steg-pakkehåndtering",
+    "href": "intro.html#første-steg-pakkehåndtering",
+    "title": "2  Introduksjon: R, RStudio og Ditt Første Program",
+    "section": "3.3 Første Steg: Pakkehåndtering",
+    "text": "3.3 Første Steg: Pakkehåndtering\nI R er det vanlig å bruke funksjonalitet som er organisert i pakker (libraries). Før du kan bruke en pakke, må du:\n\nInstallere den (gjort én gang): install.packages(\"pakkenavn\")\nLaste inn den (gjort hver økt): library(pakkenavn)\n\nVi skal bruke den populære pakken tidyverse, som er en samling verktøy for datahåndtering.\n\n3.3.1 Kodeblokk: Installer og last inn Tidyverse\n\n# 1. Installer (fjern #-tegnet og kjør linjen én gang)  \n# install.packages(\"tidyverse\")`\n\n# 2. Last inn pakken for denne økten\n# library(tidyverse)\n\nDet var kort og godt, hvordan dere kan laste ned R, RStudio og installere nødvendige pakker. I de neste kapitlene vil vi gå mer i dybden på R-språket og dets anvendelser innen økonomi.",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduksjon: R, RStudio og Ditt Første Program</span>"
+    ]
+  },
+  {
+    "objectID": "01_prov_selv.html",
+    "href": "01_prov_selv.html",
+    "title": "3  Prøv selv",
+    "section": "",
+    "text": "4 Prøv Selv i R ✍️\nDenne siden er laget for at du som student skal kunne teste koden selv direkte i nettleseren (via Binder eller lignende løsninger). Her finner du små oppgaver, kodebiter og åpne felt hvor du kan eksperimentere.",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prøv selv</span>"
+    ]
+  },
+  {
+    "objectID": "01_prov_selv.html#oppgave-1-variabler",
+    "href": "01_prov_selv.html#oppgave-1-variabler",
+    "title": "3  Prøv selv",
+    "section": "4.1 Oppgave 1: Variabler",
+    "text": "4.1 Oppgave 1: Variabler\nOpprett en variabel alder med verdien 25. Print ut verdien.\n\n# Skriv koden din her",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prøv selv</span>"
+    ]
+  },
+  {
+    "objectID": "01_prov_selv.html#oppgave-2-navngivning",
+    "href": "01_prov_selv.html#oppgave-2-navngivning",
+    "title": "3  Prøv selv",
+    "section": "4.2 Oppgave 2: Navngivning",
+    "text": "4.2 Oppgave 2: Navngivning\nLag en variabel som heter antall_boker og gi den et heltall. Lag en ny variabel pris_per_bok og multipliser dem for å finne totalprisen.\n\n# Skriv koden din her",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prøv selv</span>"
+    ]
+  },
+  {
+    "objectID": "01_prov_selv.html#oppgave-3-datatyper",
+    "href": "01_prov_selv.html#oppgave-3-datatyper",
+    "title": "3  Prøv selv",
+    "section": "4.3 Oppgave 3: Datatyper",
+    "text": "4.3 Oppgave 3: Datatyper\nDefiner tre variabler: - En numerisk variabel - En tekstvariabel - En logisk variabel\nBruk typeof() for å sjekke datatypene.\n\n# Skriv koden din her",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prøv selv</span>"
+    ]
+  },
+  {
+    "objectID": "01_prov_selv.html#oppgave-4-beregning",
+    "href": "01_prov_selv.html#oppgave-4-beregning",
+    "title": "3  Prøv selv",
+    "section": "4.4 Oppgave 4: Beregning",
+    "text": "4.4 Oppgave 4: Beregning\nDu setter inn 10 000 kr i banken med 5% rente i 3 år. Bruk formelen for sluttverdi:\n\\[K_t = K_0 (1 + r)^t \\]\n\n# Skriv koden din her",
+    "crumbs": [
+      "Introduksjon til R",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prøv selv</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html",
+    "href": "02_r_basics.html",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "",
+    "text": "5 R Grunnleggende: Variabler og Datatyper 🧱\nI dette kapittelet etablerer vi det fundamentale programmeringsspråket. Vi ser på hvordan R lagrer informasjon i variabler og hvilke datatyper som finnes. Dette tilsvarer Python Basics-konseptene du er kjent med.",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html#variabler-og-tilordning",
+    "href": "02_r_basics.html#variabler-og-tilordning",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "5.1 1. Variabler og Tilordning",
+    "text": "5.1 1. Variabler og Tilordning\nEn variabel er en navngitt referanse eller peker til en verdi lagret i datamaskinens minne. Variabler lar oss lagre data, gjenbruke dem og manipulere dem gjennom programmet.\n\n5.1.1 Tilordning (&lt;- vs. =)\nDen viktigste syntaksforskjellen fra programmeringsspråk som Python er at i R brukes pil-operatoren (&lt;-) for å tilordne en verdi til en variabel.\n\n\n\n\n\n\n\n\nOperator\nFunksjon\nAnbefaling\n\n\n\n\n&lt;-\nTilordning (Assignment). Setter verdien til variabelnavnet.\nAnbefalt for generell tilordning da den er den mest idiomatiske R-operatoren.\n\n\n=\nTilordning (Assignment) / Argumentnavn (Named Argument).\nKan brukes, men er ofte forbeholdt spesifisering av argumenter i funksjonskall (f.eks. mean(x, na.rm = TRUE)).\n\n\n\n\n\n5.1.2 Eksempler på Variabeltilordning\n\n# Tilordne heltall\nantall_studenter &lt;- 120\n\n# Tilordne desimaltall (Numeric er standard)\npris_per_enhet &lt;- 99.50\n\n# Tilordne tekst (Character)\nvaluta &lt;- \"NOK\"\n\n# For å vise verdien i R, kan du bare skrive variabelnavnet i konsollen\nantall_studenter\n\n[1] 120",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html#navngivningskonvensjon-i-r",
+    "href": "02_r_basics.html#navngivningskonvensjon-i-r",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "5.2 Navngivningskonvensjon i R",
+    "text": "5.2 Navngivningskonvensjon i R\nGod kodenavngivning er essensielt for lesbarhet.\n\nCase-sensitivitet: R er kasusfølsom. Det betyr at Pris, pris og PRIS er tre unike variabler.\nAnbefalt stil: Bruk snake_case (små bokstaver med understrek for å skille ord) for variabelnavn, f.eks. brutto_nasjonalprodukt.\nRegler: Variabelnavn kan ikke starte med et tall og kan ikke inneholde spesialtegn (unntatt understrek _).",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html#datatyper-i-r",
+    "href": "02_r_basics.html#datatyper-i-r",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "5.3 2. Datatyper i R",
+    "text": "5.3 2. Datatyper i R\nR har flere innebygde datatyper. De mest grunnleggende inkluderer:\n\n\n\n\n\n\n\n\n\nDatatype\nBeskrivelse\nEksempel\nPython Ekvivalent\n\n\n\n\nNumeric\nStandard for alle tall, inkludert desimaltall (flytpunktstall).\n42, 3.14\nfloat\n\n\nInteger\nHeltall. Må tvinges eksplisitt ved å legge til L.\n42L, 1000L\nint\n\n\nCharacter\nTekststrenger.\n\"Hei, verden!\", \"NOK\"\nstr\n\n\nLogical\nBoolsk verdi. Representerer sannhetstilstander.\nTRUE, FALSE\nbool\n\n\n\n\n5.3.1 Sjekke Datatyper\nDu kan bruke funksjonen typeof() for å sjekke datatypen til en variabel.\n\n# Eksempler på datatyper\nx &lt;- 42\ny &lt;- \"R er gøy!\"\nz &lt;- TRUE\n\ntypeof(x)  # \"double\" (Numeric)\n\n[1] \"double\"\n\ntypeof(y)  # \"character\"\n\n[1] \"character\"\n\ntypeof(z)  # \"logical\"\n\n[1] \"logical\"\n\n\nAlternativt, kan du bruke funksjonen class() for å få klassen til et objekt.\n\nclass(x)  # \"numeric\"\n\n[1] \"numeric\"\n\nclass(y)  # \"character\"\n\n[1] \"character\"\n\nclass(z)  # \"logical\"\n\n[1] \"logical\"",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html#spesielle-verdier-missing-data",
+    "href": "02_r_basics.html#spesielle-verdier-missing-data",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "5.4 Spesielle verdier (Missing data)",
+    "text": "5.4 Spesielle verdier (Missing data)\nI R representeres manglende data med NA (Not Available). Dette er viktig å håndtere i dataanalyse.\n\n# Eksempel på manglende verdi\nhoyde &lt;- c(170, 180, NA, 175)\nmean(hoyde)  # Returnerer NA\n\n[1] NA\n\nmean(hoyde, na.rm = TRUE)  # Fjerner NA og beregner gjennomsnittet\n\n[1] 175",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html#grunnleggende-operasjoner",
+    "href": "02_r_basics.html#grunnleggende-operasjoner",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "5.5 3. Grunnleggende Operasjoner",
+    "text": "5.5 3. Grunnleggende Operasjoner\nR støtter en rekke grunnleggende aritmetiske og logiske operasjoner.\n\n\n\n\n\n\n\n\nOperator\nBeskrivelse\nEksempel\n\n\n\n\n+\nAddisjon.\n5 + 3\n\n\n-\nSubtraksjon.\n5 - 3\n\n\n*\nMultiplikasjon.\n5 * 3\n\n\n/\nDivisjon.\n5 / 3\n\n\n^ eller **\nEksponentiering (Potens).\n5 ^ 3 (5 opphøyd i 3)\n\n\n%%\nModulo. Gir resten ved divisjon.\n5 %% 2 (gir 1)",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html#eksempel-finansregning---sluttverdi",
+    "href": "02_r_basics.html#eksempel-finansregning---sluttverdi",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "5.6 Eksempel: Finansregning - Sluttverdi",
+    "text": "5.6 Eksempel: Finansregning - Sluttverdi\nVi bruker R til å beregne sluttverdien av en investering med rentes rente. Det kan representeres med det matematiske uttrykket: [ K_t = K_0 (1 + r)^t ] hvor - ( K_t ) er sluttverdien etter tid ( t ), - ( K_0 ) er startkapitalen, - ( r ) er den årlige renten (i desimalform), - ( t ) er antall år.\n\n# Parametere\nK0 &lt;- 10000  # Startkapital\nr &lt;- 0.05    # Årlig rente (5%)\nt &lt;- 15      # år\n\n# Beregning av sluttverdi\nKt &lt;- K0 * (1 + r)^t\n\n# round() brukes for å formatere resultatet til to desimaler\ncat(\"Sluttverdien etter 15 år er:\", round(Kt, 2), \"kr\")\n\nSluttverdien etter 15 år er: 20789.28 kr\n\n\n\n5.6.1 Konvertering av datatyper (Type Coercion)\nNoen ganger må du eksplisitt konvertere mellom datatyper. R tilbyr flere funksjoner for dette: For å endre datatypen til en variabel (Type Coercion), bruker vi standardiserte funksjoner som starter med as.:\n\n\n\n\n\n\n\n\nFunksjon\nBeskrivelse\nEksempel\n\n\n\n\nas.numeric()\nKonverterer til numerisk type (float/desimaltall). Dette er den vanligste konverteringen fra tekst til tall.\nas.numeric(\"42\")\n\n\nas.integer()\nKonverterer til heltall (integer). OBS: R kutter alltid desimalene (trunkerer), runder ikke.\nas.integer(42.9) (blir 42)\n\n\nas.character()\nKonverterer til tekststreng (character).\nas.character(42) (blir \"42\")\n\n\nas.logical()\nKonverterer til logisk/boolsk type. Tall 1 blir TRUE, 0 blir FALSE.\nas.logical(1) (gir TRUE)\n\n\n\n\n# Eksempel på typekonvertering\nnum_str &lt;- \"123.45\"\nnum_val &lt;- as.numeric(num_str)\ncat(\"Den numeriske verdien er:\", num_val, \"\\n\")\n\nDen numeriske verdien er: 123.45 \n\nint_val &lt;- as.integer(num_val)\ncat(\"Den heltallsverdien er:\", int_val, \"\\n\")\n\nDen heltallsverdien er: 123 \n\nlog_val &lt;- as.logical(1)\ncat(\"Den logiske verdien er:\", log_val, \"\\n\")\n\nDen logiske verdien er: TRUE \n\nchar_val &lt;- as.character(int_val)\ncat(\"Den tekstlige verdien er:\", char_val, \"\\n\")\n\nDen tekstlige verdien er: 123 \n\n\n\n5.6.1.1 Viktig om as.integer() (Trunkering) ⚠️\nNår du konverterer desimaltall til heltall med as.integer(), trunkeres (avrundes ned) verdien. For eksempel, as.integer(4.9) blir 4, ikke 5. Vær oppmerksom på dette for å unngå uventede resultater.\n\n# Eksempel på trunkering\ntrunkert_verdi &lt;- as.integer(4.9)\ncat(\"Trunkert verdi av 4.9 er:\", trunkert_verdi, \"\\n\")  # Output: 4\n\nTrunkert verdi av 4.9 er: 4 \n\n# For å runde riktig av kan man gjøre\navrundet_verdi &lt;- round(4.9)\ncat(\"Avrundet verdi av 4.9 er:\", avrundet_verdi, \"\\n\")  # Output: 5\n\nAvrundet verdi av 4.9 er: 5",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "02_r_basics.html#oppsummering",
+    "href": "02_r_basics.html#oppsummering",
+    "title": "4  Grunnleggende R: Variabler, Datatyper og Operasjoner",
+    "section": "5.7 Oppsummering",
+    "text": "5.7 Oppsummering\nI dette kapittelet har vi dekket det grunnleggende om variabler, datatyper og operasjoner i R. Du har lært hvordan du tilordner verdier til variabler, sjekker datatyper, utfører grunnleggende aritmetiske operasjoner, og håndterer spesielle verdier som NA. Vi har også sett på et praktisk eksempel innen finansregning for å illustrere hvordan disse konseptene kan anvendes i økonomiske sammenhenger. Gå til Funksjoner for å lære hvordan du lager gjenbrukbare kodeblokker for å løse komplekse økonomiske problemstillinger.",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Grunnleggende R: Variabler, Datatyper og Operasjoner</span>"
+    ]
+  },
+  {
+    "objectID": "03_funksjoner.html",
+    "href": "03_funksjoner.html",
+    "title": "5  Funksjoner i R: Innebygde, og egenlagde",
+    "section": "",
+    "text": "6 R Funksjoner: Gjenbrukbar Kode 🛠\nFunksjoner er selve byggesteinene i et programmeringsspråk. De lar oss gruppere kode som utfører en spesifikk oppgave, slik at vi kan gjenbruke den uten å skrive de samme linjene om igjen. Dette er et fundamentalt prinsipp for å skrive effektiv og lesbar kode.",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funksjoner i R: Innebygde, og egenlagde</span>"
+    ]
+  },
+  {
+    "objectID": "03_funksjoner.html#hvorfor-funksjoner-dry-prinsippet",
+    "href": "03_funksjoner.html#hvorfor-funksjoner-dry-prinsippet",
+    "title": "5  Funksjoner i R: Innebygde, og egenlagde",
+    "section": "6.1 Hvorfor Funksjoner? (DRY-prinsippet)",
+    "text": "6.1 Hvorfor Funksjoner? (DRY-prinsippet)\nHovedregelen i programmering er å følge DRY-prinsippet: Don’t Repeat Yourself.\n\nEt program uten egendefinerte funksjoner er bare en lang liste med kommandoer.\nHvis du repeterer kode, selv bare et par ganger, bør du lage en funksjon for å håndtere dette.\nFunksjoner gjør koden mer oversiktlig og enklere å feilsøke.",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funksjoner i R: Innebygde, og egenlagde</span>"
+    ]
+  },
+  {
+    "objectID": "03_funksjoner.html#innebygde-funksjoner-i-r",
+    "href": "03_funksjoner.html#innebygde-funksjoner-i-r",
+    "title": "5  Funksjoner i R: Innebygde, og egenlagde",
+    "section": "6.2 Innebygde Funksjoner i R",
+    "text": "6.2 Innebygde Funksjoner i R\nR, som er bygget for statistikk og analyse, har et enormt bibliotek av innebygde funksjoner klare til bruk. Dette er en av hovedgrunnen til at R er så godt egnet for økonomer, da vi har mye av det vi trenger - innebygde i R.\nHer er noen sentrale innebygde funksjoner for økonomiske beregninger:\n\n\n\n\n\n\n\n\nFunksjon\nBeskrivelse\nEksempel\n\n\n\n\nsum()\nSummerer verdiene i en vektor.\nsum(c(10, 20, 5))\n\n\nmean()\nBeregner gjennomsnittet av en vektor.\nmean(c(10, 20, 5))\n\n\nmax(), min()\nFinner henholdsvis maksimum og minimum verdi.\nmax(5, 3.0, 50)\n\n\nabs()\nReturnerer absoluttverdien.\nabs(-2.4)\n\n\nround()\nRunder av til nærmeste heltall eller angitt antall desimaler.\nround(3.1415, 2)\n\n\nlength()\nGir lengden av en vektor/objekt (tilsvarende len() i Python).\nlength(c(\"a\", \"b\", \"c\"))\n\n\n\n\n6.2.1 Eksempel: Bruk av innebygde funksjoner\n\n# Definerer en numerisk vektor (som tilsvarer en liste i Python)\ninnskudd &lt;- c(100, 50, 75, 200)\n\n# Finner summen av innskuddene\ntotal_verdi &lt;- sum(innskudd)\nprint(paste(\"Total sum:\", total_verdi))\n\n[1] \"Total sum: 425\"\n\n# Finner gjennomsnittlig innskudd\nsnitt_verdi &lt;- mean(innskudd)\nprint(paste(\"Gjennomsnitt:\", snitt_verdi))\n\n[1] \"Gjennomsnitt: 106.25\"\n\n# Runder av et komplekst tall\npi_tall &lt;- 3.14159265\navrundet_pi &lt;- round(pi_tall, 3) # Kan spesifisere hvor mange desimaler vi ønsker\nprint(paste(\"Pi avrundet til tre desimaler:\", avrundet_pi))\n\n[1] \"Pi avrundet til tre desimaler: 3.142\"",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funksjoner i R: Innebygde, og egenlagde</span>"
+    ]
+  },
+  {
+    "objectID": "03_funksjoner.html#hvordan-lager-vi-egne-funksjoner-i-r",
+    "href": "03_funksjoner.html#hvordan-lager-vi-egne-funksjoner-i-r",
+    "title": "5  Funksjoner i R: Innebygde, og egenlagde",
+    "section": "6.3 Hvordan lager vi egne funksjoner i R",
+    "text": "6.3 Hvordan lager vi egne funksjoner i R\nÅ lage egne funksjoner i R er enkelt og følger en klar syntaks. Her er strukturen for å definere en funksjon:\n\nnavn_på_funksjon &lt;- function(par1, par2, ...) {\n  # Kode som utfører oppgaven\n  resultat &lt;- arg1 + arg2  # Eksempeloperasjon\n  return(resultat)         # Returnerer resultatet\n}\n\nLegg merke til at vi bruker &lt;- for å tilordne funksjonen til et navn, og return() for å spesifisere hva funksjonen skal gi tilbake. Etter du har skrevet function() må du oppgi parametere. Parametere er variabler som funksjonen bruker for å utføre sin oppgave.\n\n6.3.1 Eksempel: Egen funksjon for å beregne fremtidig verdi av en investering\n\n# Funksjon for å beregne fremtidig verdi med rentes rente\nfremtidig_verdi &lt;- function(startkapital, rente, år) {\n  sluttverdi &lt;- startkapital * (1 + rente)^år\n  return(sluttverdi)\n}\n# Bruker funksjonen\ninvestering &lt;- fremtidig_verdi(10000, 0.05, 15)\nprint(paste(\"Fremtidig verdi etter 15 år:\", round(investering, 2), \"kr\"))\n\n[1] \"Fremtidig verdi etter 15 år: 20789.28 kr\"\n\n\nI eksempelet over er parameterne startkapital, rente, og år nødvendige for å beregne den fremtidige verdien av en investering. Men når vi kaller på funksjonen, kan vi bruke hvilke som helst verdier for disse paramterne. Disse kalles i programmering da for argument.\n\n\n6.3.2 Argument vs parameter\nDet er viktig å skille mellom disse to nøkkelbegreper:\nParametere: Variabelnavnene som defineres inne i funksjonen. De fungerer som plassholdere for verdiene som skal brukes i beregningen.\nArgumenter: De faktiske verdiene du sender inn til funksjonen når du kaller den.",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funksjoner i R: Innebygde, og egenlagde</span>"
+    ]
+  },
+  {
+    "objectID": "03_funksjoner.html#funksjoner-med-flere-argumenter-og-standardverdier",
+    "href": "03_funksjoner.html#funksjoner-med-flere-argumenter-og-standardverdier",
+    "title": "5  Funksjoner i R: Innebygde, og egenlagde",
+    "section": "6.4 Funksjoner med flere argumenter og standardverdier",
+    "text": "6.4 Funksjoner med flere argumenter og standardverdier\nDu kan lage funksjoner som tar flere argumenter, og du kan også sette standardverdier for noen av dem. Dette gjør funksjonene mer fleksible.\n\n# Funksjon med flere argumenter og en standardverdi\nberegn_mva &lt;- function(beløp, mva_sats = 0.25) {\n  mva &lt;- beløp * mva_sats\n  total &lt;- beløp + mva\n  return(total)\n}\n# Bruker funksjonen med og uten standardverdi\npris_uten_mva &lt;- beregn_mva(1000)          # Bruker standard mva_sats (0.25)\npris_med_annen_mva &lt;- beregn_mva(1000, 0.15) # Spesifiserer en annen mva_sats (0.15)\nprint(paste(\"Pris med standard MVA (25%):\", round(pris_uten_mva, 2), \"kr\"))\n\n[1] \"Pris med standard MVA (25%): 1250 kr\"\n\nprint(paste(\"Pris med spesifisert MVA (15%):\", round(pris_med_annen_mva, 2), \"kr\"))\n\n[1] \"Pris med spesifisert MVA (15%): 1150 kr\"",
+    "crumbs": [
+      "Grunnleggende R",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funksjoner i R: Innebygde, og egenlagde</span>"
+    ]
+  },
+  {
+    "objectID": "04_vektorer_lister.html",
+    "href": "04_vektorer_lister.html",
+    "title": "6  Vektorer, Lister og Tibble: Grunnleggende Datastrukturer",
+    "section": "",
+    "text": "7 📊 Vektorer og Lister: R’s Datastrukturer\nI Python brukte vi Lister og NumPy-arrays for å håndtere grupper av data. I R er de tilsvarende, og mest fundamentale, strukturene Vektorer og Lister.\nDette kapittelet dekker disse strukturene, og introduserer også datastrukturen vi finner i Tibble.",
+    "crumbs": [
+      "Data og Strukturer",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Vektorer, Lister og Tibble: Grunnleggende Datastrukturer</span>"
+    ]
+  },
+  {
+    "objectID": "04_vektorer_lister.html#vektorer-rs-fundament",
+    "href": "04_vektorer_lister.html#vektorer-rs-fundament",
+    "title": "6  Vektorer, Lister og Tibble: Grunnleggende Datastrukturer",
+    "section": "7.1 1. Vektorer: R’s Fundament",
+    "text": "7.1 1. Vektorer: R’s Fundament\nEn vektor er R’s mest grunnleggende dataobjekt og tilsvarer konseptet med en NumPy-array i Python. En vektor er en sekvens av elementer som må være av samme type (f.eks. kun numeric, kun character, eller kun logical).\n\n7.1.1 Oppretting av Vektorer\nVi bruker funksjonen c() (som står for combine) for å lage vektorer.\n\n# 1. Numerisk Vektor (Tilsv. Python list/NumPy array av tall)\npriser &lt;- c(10.50, 12.00, 9.75, 11.25)\ntypeof(priser)\n\n[1] \"double\"\n\nlength(priser)\n\n[1] 4\n\n# 2. Karakter-Vektor (Tekst)\nland &lt;- c(\"Norge\", \"Sverige\", \"Danmark\", \"Finland\")\ntypeof(land)\n\n[1] \"character\"\n\n# 3. Logisk Vektor\ner_ferdig &lt;- c(TRUE, FALSE, TRUE)\ntypeof(er_ferdig)\n\n[1] \"logical\"\n\n\n\n\n7.1.2 Indeksering av Vektorer\nIndeksering i R starter på 1 (ikke 0 som i Python). Vi bruker [] for å hente ut elementer.\n\n# Hente ut første element\nførste_pris &lt;- priser[1]\nprint(første_pris)\n\n[1] 10.5\n\n# Hente ut flere elementer (2. og 4.)\nvalgte_priser &lt;- priser[c(2, 4)]\n\nHvis vi ønsker å hente flere elementer, kan vi bruke en vektor av indekser.\n\nvalgte_priser &lt;- priser[c(2, 4)]\nprint(valgte_priser)\n\n[1] 12.00 11.25\n\n\nVi kan også utelate elementer ved hjelp av negativ indeksering:\n\nland &lt;- c(\"Norge\", \"Sverige\", \"Danmark\", \"Finland\")\nuten_sverige &lt;- land[-2]\nprint(uten_sverige)\n\n[1] \"Norge\"   \"Danmark\" \"Finland\"",
+    "crumbs": [
+      "Data og Strukturer",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Vektorer, Lister og Tibble: Grunnleggende Datastrukturer</span>"
+    ]
+  },
+  {
+    "objectID": "04_vektorer_lister.html#lister-fleksible-datastrukturer",
+    "href": "04_vektorer_lister.html#lister-fleksible-datastrukturer",
+    "title": "6  Vektorer, Lister og Tibble: Grunnleggende Datastrukturer",
+    "section": "7.2 Lister: Fleksible Datastrukturer",
+    "text": "7.2 Lister: Fleksible Datastrukturer\nEn liste i R er en mer fleksibel datastruktur som kan inneholde elementer av forskjellige typer og lengder. Dette kan brukes ved help av funksjonen list().\n\n# Opprette en liste med forskjellige datatyper\n\nmin_liste &lt;- list(\n  navn = \"Ola Nordmann\",\n  alder = 30,\n  høyde = 175.5,\n  er_student = FALSE,\n  karakterer = c(5, 4, 6)\n)\ntypeof(min_liste)\n\n[1] \"list\"\n\nlength(min_liste)\n\n[1] 5\n\nprint(min_liste)\n\n$navn\n[1] \"Ola Nordmann\"\n\n$alder\n[1] 30\n\n$høyde\n[1] 175.5\n\n$er_student\n[1] FALSE\n\n$karakterer\n[1] 5 4 6\n\n\n\n7.2.1 Oppslag i lister\nVi kan hente ut elementer fra en liste ved hjelp av $ eller [[ ]].\n\n# Hente ut elementer fra listen\nnavn &lt;- min_liste$navn\nalder &lt;- min_liste[[\"alder\"]]\nprint(navn)\n\n[1] \"Ola Nordmann\"\n\nprint(alder)\n\n[1] 30\n\nkarakterer &lt;- min_liste$karakterer\nprint(karakterer)\n\n[1] 5 4 6\n\ngjennomsnittskarakter &lt;- mean(karakterer)\nprint(gjennomsnittskarakter)\n\n[1] 5",
+    "crumbs": [
+      "Data og Strukturer",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Vektorer, Lister og Tibble: Grunnleggende Datastrukturer</span>"
+    ]
+  }
+]
