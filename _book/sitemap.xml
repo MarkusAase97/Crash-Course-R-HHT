@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://MarkusAase97.github.io/Crash-Course-R-HHT/index.html</loc>
+    <lastmod>2025-09-24T08:52:53.827Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusAase97.github.io/Crash-Course-R-HHT/intro.html</loc>
+    <lastmod>2025-09-24T07:27:28.945Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusAase97.github.io/Crash-Course-R-HHT/01_prov_selv.html</loc>
+    <lastmod>2025-09-24T09:30:14.384Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusAase97.github.io/Crash-Course-R-HHT/02_r_basics.html</loc>
+    <lastmod>2025-09-24T08:28:33.080Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusAase97.github.io/Crash-Course-R-HHT/03_funksjoner.html</loc>
+    <lastmod>2025-09-24T08:28:44.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusAase97.github.io/Crash-Course-R-HHT/04_vektorer_lister.html</loc>
+    <lastmod>2025-09-24T08:41:27.478Z</lastmod>
+  </url>
+  <url>
+    <loc>https://MarkusAase97.github.io/Crash-Course-R-HHT/05_tidyverse_databehandling.html</loc>
+    <lastmod>2025-09-24T08:30:10.562Z</lastmod>
+  </url>
+</urlset>

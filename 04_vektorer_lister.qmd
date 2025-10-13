@@ -1,0 +1,88 @@
+---
+title: "Vektorer, Lister og Tibble: Grunnleggende Datastrukturer"
+---
+
+# 📊 Vektorer og Lister: R's Datastrukturer
+
+I Python brukte vi **Lister** og **NumPy-arrays** for å håndtere grupper av data. I R er de tilsvarende, og mest fundamentale, strukturene **Vektorer** og **Lister**.
+
+Dette kapittelet dekker disse strukturene, og introduserer også datastrukturen vi finner i **Tibble**.
+
+## 1. Vektorer: R's Fundament
+
+En **vektor** er R's mest grunnleggende dataobjekt og tilsvarer konseptet med en NumPy-array i Python. En vektor er en sekvens av elementer som **må** være av **samme type** (f.eks. kun `numeric`, kun `character`, eller kun `logical`).
+
+### Oppretting av Vektorer
+
+Vi bruker funksjonen **`c()`** (som står for *combine*) for å lage vektorer.
+
+```{r}
+# 1. Numerisk Vektor (Tilsv. Python list/NumPy array av tall)
+priser <- c(10.50, 12.00, 9.75, 11.25)
+typeof(priser)
+length(priser)
+
+# 2. Karakter-Vektor (Tekst)
+land <- c("Norge", "Sverige", "Danmark", "Finland")
+typeof(land)
+
+# 3. Logisk Vektor
+er_ferdig <- c(TRUE, FALSE, TRUE)
+typeof(er_ferdig)
+```
+
+### Indeksering av Vektorer
+Indeksering i R starter på **1** (ikke 0 som i Python). Vi bruker `[]` for å hente ut elementer.
+```{r}
+# Hente ut første element
+første_pris <- priser[1]
+print(første_pris)
+# Hente ut flere elementer (2. og 4.)
+valgte_priser <- priser[c(2, 4)]
+```
+
+Hvis vi ønsker å hente flere elementer, kan vi bruke en vektor av indekser.
+```{r}
+valgte_priser <- priser[c(2, 4)]
+print(valgte_priser)
+```
+
+Vi kan også utelate elementer ved hjelp av negativ indeksering:
+```{r}
+land <- c("Norge", "Sverige", "Danmark", "Finland")
+uten_sverige <- land[-2]
+print(uten_sverige)
+```
+
+## Lister: Fleksible Datastrukturer
+En **liste** i R er en mer fleksibel datastruktur som kan inneholde elementer av forskjellige typer og lengder. Dette kan brukes ved help av funksjonen `list()`.
+```{r}
+# Opprette en liste med forskjellige datatyper
+
+min_liste <- list(
+  navn = "Ola Nordmann",
+  alder = 30,
+  høyde = 175.5,
+  er_student = FALSE,
+  karakterer = c(5, 4, 6)
+)
+typeof(min_liste)
+length(min_liste)
+print(min_liste)
+```
+
+### Oppslag i lister
+Vi kan hente ut elementer fra en liste ved hjelp av `$` eller `[[ ]]`.
+```{r}
+# Hente ut elementer fra listen
+navn <- min_liste$navn
+alder <- min_liste[["alder"]]
+print(navn)
+print(alder)
+karakterer <- min_liste$karakterer
+print(karakterer)
+gjennomsnittskarakter <- mean(karakterer)
+print(gjennomsnittskarakter)
+```
+
+

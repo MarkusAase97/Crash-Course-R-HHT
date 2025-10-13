@@ -1,0 +1,105 @@
+---
+title: "Funksjoner i R: Innebygde, og egenlagde"
+---
+
+# R Funksjoner: Gjenbrukbar Kode 🛠
+
+Funksjoner er selve byggesteinene i et programmeringsspråk. De lar oss gruppere kode som utfører en spesifikk oppgave, slik at vi kan gjenbruke den uten å skrive de samme linjene om igjen. Dette er et fundamentalt prinsipp for å skrive **effektiv** og **lesbar** kode.
+
+## Hvorfor Funksjoner? (DRY-prinsippet)
+
+Hovedregelen i programmering er å følge **DRY**-prinsippet: **D**on't **R**epeat **Y**ourself.
+
+-   Et program uten egendefinerte funksjoner er bare en lang liste med kommandoer.
+-   Hvis du repeterer kode, selv bare et par ganger, bør du lage en funksjon for å håndtere dette.
+-   Funksjoner gjør koden mer oversiktlig og enklere å feilsøke.
+
+## Innebygde Funksjoner i R
+
+R, som er bygget for statistikk og analyse, har et enormt bibliotek av innebygde funksjoner klare til bruk. Dette er en av hovedgrunnen til at R er så godt egnet for økonomer, da vi har mye av det vi trenger - innebygde i R.
+
+Her er noen sentrale innebygde funksjoner for økonomiske beregninger:
+
+| Funksjon | Beskrivelse | Eksempel |
+|:-----------------------|:-----------------------|:-----------------------|
+| `sum()` | Summerer verdiene i en vektor. | `sum(c(10, 20, 5))` |
+| `mean()` | Beregner gjennomsnittet av en vektor. | `mean(c(10, 20, 5))` |
+| `max()`, `min()` | Finner henholdsvis maksimum og minimum verdi. | `max(5, 3.0, 50)` |
+| `abs()` | Returnerer absoluttverdien. | `abs(-2.4)` |
+| `round()` | Runder av til nærmeste heltall eller angitt antall desimaler. | `round(3.1415, 2)` |
+| `length()` | Gir lengden av en vektor/objekt (tilsvarende `len()` i Python). | `length(c("a", "b", "c"))` |
+
+### Eksempel: Bruk av innebygde funksjoner
+
+```{r}
+# Definerer en numerisk vektor (som tilsvarer en liste i Python)
+innskudd <- c(100, 50, 75, 200)
+
+# Finner summen av innskuddene
+total_verdi <- sum(innskudd)
+print(paste("Total sum:", total_verdi))
+
+# Finner gjennomsnittlig innskudd
+snitt_verdi <- mean(innskudd)
+print(paste("Gjennomsnitt:", snitt_verdi))
+
+# Runder av et komplekst tall
+pi_tall <- 3.14159265
+avrundet_pi <- round(pi_tall, 3) # Kan spesifisere hvor mange desimaler vi ønsker
+print(paste("Pi avrundet til tre desimaler:", avrundet_pi))
+```
+
+## Hvordan lager vi egne funksjoner i R
+
+Å lage egne funksjoner i R er enkelt og følger en klar syntaks. Her er strukturen for å definere en funksjon:
+
+```{r}
+navn_på_funksjon <- function(par1, par2, ...) {
+  # Kode som utfører oppgaven
+  resultat <- arg1 + arg2  # Eksempeloperasjon
+  return(resultat)         # Returnerer resultatet
+}
+```
+
+Legg merke til at vi bruker `<-` for å tilordne funksjonen til et navn, og `return()` for å spesifisere hva funksjonen skal gi tilbake. Etter du har skrevet `function()` må du oppgi *parametere*. Parametere er variabler som funksjonen bruker for å utføre sin oppgave.
+
+### Eksempel: Egen funksjon for å beregne fremtidig verdi av en investering
+
+```{r}
+# Funksjon for å beregne fremtidig verdi med rentes rente
+fremtidig_verdi <- function(startkapital, rente, år) {
+  sluttverdi <- startkapital * (1 + rente)^år
+  return(sluttverdi)
+}
+# Bruker funksjonen
+investering <- fremtidig_verdi(10000, 0.05, 15)
+print(paste("Fremtidig verdi etter 15 år:", round(investering, 2), "kr"))
+```
+
+I eksempelet over er parameterne `startkapital`, `rente`, og `år` nødvendige for å beregne den fremtidige verdien av en investering. Men når vi kaller på funksjonen, kan vi bruke hvilke som helst verdier for disse paramterne. Disse kalles i programmering da for **argument**.
+
+### Argument vs parameter
+
+Det er viktig å skille mellom disse to nøkkelbegreper:
+
+**Parametere**: Variabelnavnene som defineres inne i funksjonen. De fungerer som plassholdere for verdiene som skal brukes i beregningen.
+
+**Argumenter**: De faktiske verdiene du sender inn til funksjonen når du kaller den.
+
+## Funksjoner med flere argumenter og standardverdier
+
+Du kan lage funksjoner som tar flere argumenter, og du kan også sette standardverdier for noen av dem. Dette gjør funksjonene mer fleksible.
+
+```{r}
+# Funksjon med flere argumenter og en standardverdi
+beregn_mva <- function(beløp, mva_sats = 0.25) {
+  mva <- beløp * mva_sats
+  total <- beløp + mva
+  return(total)
+}
+# Bruker funksjonen med og uten standardverdi
+pris_uten_mva <- beregn_mva(1000)          # Bruker standard mva_sats (0.25)
+pris_med_annen_mva <- beregn_mva(1000, 0.15) # Spesifiserer en annen mva_sats (0.15)
+print(paste("Pris med standard MVA (25%):", round(pris_uten_mva, 2), "kr"))
+print(paste("Pris med spesifisert MVA (15%):", round(pris_med_annen_mva, 2), "kr"))
+```

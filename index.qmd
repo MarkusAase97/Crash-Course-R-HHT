@@ -1,0 +1,43 @@
+---
+title: "Velkommen til R-Kræsj Kurs"
+subtitle: "En interaktiv introduksjon til R for studenter ved Handelshøgskolen (UiT)"
+---
+
+# Velkommen! 🚀
+
+Dette kurset er designet som et intensivt, praktisk introduksjonskurs i programmeringsspråket **R**, spesielt tilpasset studenter ved **Handelshøgskolen UiT**.
+
+Målet er å gi deg grunnleggende ferdigheter i programmering og dataanalyse. Du vil lære å bruke R til å:
+
+1.  Håndtere, rense og transformere økonomiske datasett.
+2.  Visualisere data effektivt med moderne verktøy.
+3.  Anvende logikk og løkker for å løse økonomiske problemstillinger (f.eks. renteregning, simulering).
+4.  Enkel introduksjon til simulering i R.
+
+## Om Kurset og Interaktivitet
+
+Dette er en **interaktiv bok**. Det betyr at du kan:
+
+-   **Lese:** Gå gjennom teorien og kodeeksemplene.
+-   **Kjøre kode:** Ved hjelp av [Binder](https://mybinder.org/) (rakett-ikonet øverst) kan du starte et eksternt miljø hvor du kan kjøre R-kode direkte i nettleseren, uten lokal installasjon.
+-   **Øve:** Hvert kapittel inneholder «Prøv selv»-oppgaver for å styrke læringen.
+
+Vi fokuserer på **Tidyverse**-økosystemet (spesielt **`dplyr`** for datahåndtering og **`ggplot2`** for visualisering), som er standarden for dataanalyse i moderne R.
+
+## Kursstruktur
+
+Kurset er delt inn i moduler som bygger på hverandre. Du vil kjenne igjen temaene fra Python-kurset, men nå anvendt i R-språket.
+
+### Moduler:
+
+1.  **Introduksjon** (Dette kapittelet)
+2.  **Grunnleggende R**: Variabler, datatyper og funksjoner.
+3.  **Data og Strukturer**: Hvordan R håndterer data (Vektorer, Lister, **Tibbles**).
+4.  **Databehandling med Tidyverse**: Laste inn, filtrere og aggregere data (erstatter Pandas).
+5.  **Logikk og Kontrollflyt**: `if/else`, `for`- og `while`-løkker.
+6.  **Visualisering med ggplot2**: Lage profesjonelle grafer (erstatter Matplotlib/Seaborn).
+7.  **Anvendt Økonomi**: Simuleringer og symbolsk matematikk (f.eks. derivasjon).
+
+------------------------------------------------------------------------
+
+Klikk på **Introduksjon** eller **Grunnleggende R** i innholdsfortegnelsen til venstre for å starte. Lykke til!

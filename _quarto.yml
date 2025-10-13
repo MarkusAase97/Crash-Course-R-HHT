@@ -1,0 +1,49 @@
+project:
+  type: book
+
+book:
+  title: "R-Kræsj Kurs for Økonomistudenter"
+  author: "Markus Aase"
+  date: "24. September 2025"
+  # Oppdater stiene med dine faktiske brukernavn/repo
+  site-url: https://MarkusAase97.github.io/Crash-Course-R-HHT/
+  repo-url: https://github.com/MarkusAase97/Crash-Course-R-HHT
+  repo-branch: main
+  repo-actions: [edit, source, issue]
+
+  chapters:
+    - part: Velkommen 
+      chapters:
+        - index.qmd # Dette er forsiden, nummereres vanligvis ikke
+
+    - part: Introduksjon til R # Dette blir Del 1
+      chapters:
+        - intro.qmd             # <-- Dette blir Kapittel 1
+        - 01_prov_selv.qmd
+    
+    - part: Grunnleggende R # Dette blir Del 2
+      chapters:
+        - 02_r_basics.qmd  
+        - 03_funksjoner.qmd # Funksjoner
+    - part: Data og Strukturer
+      chapters:
+        - 04_vektorer_lister.qmd # Lister, Oppslag, Numpy -> Vektorer/Tibbles i R
+        - 05_tidyverse_databehandling.qmd # Pandas -> Tidyverse/dplyr
+#    - part: Logikk og Løkker
+#      chapters:
+#        - 06_logikk_og_loekker.qmd # Logikk, Løkker
+#    - part: Visualisering
+#      chapters:
+#        - 07_ggplot2.qmd # Matplotlib/Seaborn -> ggplot2
+#    - part: Anvendt Økonomi
+#      chapters:
+#- 08_symbolsk_matematikk.qmd # Sympy -> Symbolsk R (f.eks. Ryacas)
+#        - 09_simulering.qmd # Simuleringer
+
+# Konfigurer for publisering (GitHub Pages)
+format:
+  html:
+    theme: cosmo
+    toc: true
+    lang: nb
+
