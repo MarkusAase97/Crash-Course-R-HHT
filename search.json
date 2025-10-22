@@ -15,7 +15,7 @@
     "href": "index.html#om-kurset-og-interaktivitet",
     "title": "R-Kræsj Kurs for Økonomistudenter",
     "section": "1.1 Om Kurset og Interaktivitet",
-    "text": "1.1 Om Kurset og Interaktivitet\nDette er en interaktiv bok. Det betyr at du kan:\n\nLese: Gå gjennom teorien og kodeeksemplene.\nKjøre kode: Ved hjelp av Binder (rakett-ikonet øverst) kan du starte et eksternt miljø hvor du kan kjøre R-kode direkte i nettleseren, uten lokal installasjon.\nØve: Hvert kapittel inneholder «Prøv selv»-oppgaver for å styrke læringen.\n\nVi fokuserer på Tidyverse-økosystemet (spesielt dplyr for datahåndtering og ggplot2 for visualisering), som er standarden for dataanalyse i moderne R.",
+    "text": "1.1 Om Kurset og Interaktivitet\nDette er en interaktiv bok. Det betyr at du kan:\n\nLese: Gå gjennom teorien og kodeeksemplene.\nKjøre kode: På nettsiden her vil dere finne en oppskrift for hvordan dere laster ned R og RStudio, for å kunne kjøre kode.\nØve: Hvert kapittel inneholder «Prøv selv»-oppgaver for å styrke læringen.\n\nVi fokuserer på Tidyverse-økosystemet (spesielt dplyr for datahåndtering og ggplot2 for visualisering), som er standarden for dataanalyse i moderne R.",
     "crumbs": [
       "Velkommen",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Velkommen til R-Kræsj Kurs</span>"
@@ -81,7 +81,7 @@
     "href": "01_prov_selv.html",
     "title": "3  Prøv selv",
     "section": "",
-    "text": "4 Prøv Selv i R ✍️\nDenne siden er laget for at du som student skal kunne teste koden selv direkte i nettleseren (via Binder eller lignende løsninger). Her finner du små oppgaver, kodebiter og åpne felt hvor du kan eksperimentere.",
+    "text": "4 Prøv Selv i R ✍️\nDenne siden gir deg oppgaver for å bli bedre kjent med R. Her finner du små oppgaver, kodebiter og åpne felt hvor du kan eksperimentere.\nÅpne RStudio på din Mac/PC, og prøv å løse oppgavene.",
     "crumbs": [
       "Introduksjon til R",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prøv selv</span>"
@@ -305,6 +305,17 @@
     "crumbs": [
       "Data og Strukturer",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Vektorer, Lister og Tibble: Grunnleggende Datastrukturer</span>"
+    ]
+  },
+  {
+    "objectID": "05_tidyverse_databehandling.html",
+    "href": "05_tidyverse_databehandling.html",
+    "title": "7  format: html",
+    "section": "",
+    "text": "title: “Tidyverse og databehandling”",
+    "crumbs": [
+      "Data og Strukturer",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>format: html</span>"
     ]
   }
 ]
