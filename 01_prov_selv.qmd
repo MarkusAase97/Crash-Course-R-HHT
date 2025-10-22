@@ -4,7 +4,9 @@ title: "Prøv selv"
 
 # Prøv Selv i R ✍️
 
-Denne siden er laget for at du som student skal kunne teste koden selv direkte i nettleseren (via **Binder** eller lignende løsninger). Her finner du små oppgaver, kodebiter og åpne felt hvor du kan eksperimentere.
+Denne siden gir deg oppgaver for å bli bedre kjent med R. Her finner du små oppgaver, kodebiter og åpne felt hvor du kan eksperimentere.
+
+Åpne RStudio på din Mac/PC, og prøv å løse oppgavene.
 
 ---
 
