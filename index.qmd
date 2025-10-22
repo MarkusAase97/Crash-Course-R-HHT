@@ -41,3 +41,6 @@ Kurset er delt inn i moduler som bygger på hverandre. Du vil kjenne igjen temae
 ------------------------------------------------------------------------
 
 Klikk på **Introduksjon** eller **Grunnleggende R** i innholdsfortegnelsen til venstre for å starte. Lykke til!
+
+[![Launch RStudio in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MarkusAase97/Crash-Course-R-HHT/main?urlpath=rstudio)
+

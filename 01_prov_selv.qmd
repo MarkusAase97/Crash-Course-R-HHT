@@ -47,7 +47,7 @@ Bruk `typeof()` for å sjekke datatypene.
 
 Du setter inn `10 000 kr` i banken med 5% rente i 3 år. Bruk formelen for sluttverdi:
 
-\[ K_t = K_0 (1 + r)^t \]
+$$K_t = K_0 (1 + r)^t $$
 
 ```{r}
 # Skriv koden din her
